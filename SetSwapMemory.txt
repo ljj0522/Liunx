@@ -10,3 +10,4 @@ sudo swapon /swap/swapfile
 
 echo '/swap/swapfile swap swap defaults 0 0' >> /etc/fstab
 
+sudo mkdir /swap && sudo fallocate -l 56G /swap/swapfile && sudo chmod 600 /swap/swapfile && sudo mkswap /swap/swapfile && sudo swapon /swap/swapfile && echo '/swap/swapfile swap swap defaults 0 0' >> /etc/fstab
